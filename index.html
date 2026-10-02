@@ -38,6 +38,7 @@
       <a href="#roadmap">Roadmap</a>
       <a href="#members">Members</a>
       <a href="#news">News</a>
+      <a href="#publications">Publications</a>
       <a href="#contact">Contact</a>
       <span class="lang"><span><b>JA</b></span><a href="en/" hreflang="en">EN</a></span>
     </nav>
@@ -50,9 +51,6 @@
 <section class="hero" id="top">
   <canvas id="twin-canvas" aria-hidden="true"></canvas>
   <div class="hero-grid" aria-hidden="true"></div>
-  <div class="hero-labels" aria-hidden="true">
-    <div class="wrap"><span class="real">REAL SPACE</span><span class="virtual">VIRTUAL SPACE</span></div>
-  </div>
   <div class="hero-inner wrap">
     <p class="hero-kicker">JST CREST — 2026–2032</p>
     <h1>Twin<br><span class="thin">Agriculture</span></h1>
@@ -77,57 +75,51 @@
 
     <p class="vision-lead rv">栽培は、植物と人間がつくるインタラクションである。<br>私たちは栽培環境をまるごと仮想化し、実空間と仮想空間の両方で植物を育てる<em>「ツイン農業」</em>の基盤をつくります。</p>
 
-    <div class="vision-body">
-      <div class="year rv">203X</div>
-      <p class="rv d1">圃場で日々行われる栽培作業は、ドローン・ロボット・作業者視点のデータによって常に記録され、仮想空間上の農場「ツイン農業プラットフォーム」へとリアルタイムに反映される。仮想空間では、植物の精緻な構造と成長予測、圃場全体の状態、作業者の行動知見が統合され、次に行うべき最適な作業が作業者やロボットへフィードバックされる。</p>
-      <p class="rv d2">これまでの「スマート農業」が実現してきたのは、収穫や農薬散布、比較的単純な病害検出が中心でした。剪定・誘引、生育予測と収量最大化といった専門性の高い日常作業を支えるには、葉一枚・枝一本の構造や熟練者の「意図」までを緻密に仮想化する必要があります。本プロジェクトは、このボトルネックに正面から挑みます。</p>
+    <div class="contrast">
+      <div class="contrast-col future rv d1">
+        <span class="contrast-tag">203X — 未来像</span>
+        <p>圃場で日々行われる栽培作業は、ドローン・ロボット・作業者視点のデータによって常に記録され、仮想空間上の農場「ツイン農業プラットフォーム」へとリアルタイムに反映される。仮想空間では、植物の精緻な構造と成長予測、圃場全体の状態、作業者の行動知見が統合され、次に行うべき最適な作業が作業者やロボットへフィードバックされる。</p>
+      </div>
+      <div class="contrast-col today rv d2">
+        <span class="contrast-tag">TODAY — 現在の課題</span>
+        <p>これまでの「スマート農業」が実現してきたのは、収穫や農薬散布、比較的単純な病害検出が中心でした。剪定・誘引、生育予測と収量最大化といった専門性の高い日常作業を支えるには、葉一枚・枝一本の構造や熟練者の「意図」までを緻密に仮想化する必要があります。本プロジェクトは、このボトルネックに正面から挑みます。</p>
+      </div>
     </div>
 
-    <div class="loop rv">
-      <svg class="loop-svg" viewBox="0 0 1180 400" role="img" aria-label="実空間と仮想空間をつなぐツイン農業のループ">
-        <defs>
-          <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0b1a16"/></marker>
-          <marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2aa79b"/></marker>
-          <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#4fd6c9" opacity=".5"/></pattern>
-        </defs>
-        <!-- real -->
-        <rect x="0.5" y="40.5" width="330" height="320" rx="4" fill="#fff" stroke="#0b1a16" stroke-opacity=".15"/>
-        <text x="24" y="76" font-size="12" letter-spacing="2" fill="#5d6a64" class="mono">REAL SPACE</text>
-        <text x="24" y="108" font-size="26" font-weight="600" fill="#0b1a16">実空間</text>
-        <g font-size="15" fill="#1a2420" class="ja">
-          <text x="24" y="160">● 圃場・果樹園</text>
-          <text x="24" y="194">● 農作業者</text>
-          <text x="24" y="228">● ドローン・ロボット</text>
-          <text x="24" y="262">● 環境センサ</text>
-        </g>
-        <!-- virtual -->
-        <rect x="849.5" y="40.5" width="330" height="320" rx="4" fill="#0b1a16"/>
-        <rect x="849.5" y="40.5" width="330" height="320" rx="4" fill="url(#dots)" opacity=".35"/>
-        <text x="874" y="76" font-size="12" letter-spacing="2" fill="#4fd6c9" class="mono">VIRTUAL SPACE</text>
-        <text x="874" y="108" font-size="26" font-weight="600" fill="#fff">仮想空間</text>
-        <g font-size="14" class="ja">
-          <rect x="874" y="134" width="282" height="44" rx="2" fill="none" stroke="#4fd6c9" stroke-opacity=".5"/>
-          <text x="890" y="161" fill="#fff">植物個体　<tspan fill="#c9f27a" font-weight="600" style="font-family:'Inter Tight',sans-serif">PlantTwin</tspan></text>
-          <rect x="874" y="188" width="282" height="44" rx="2" fill="none" stroke="#4fd6c9" stroke-opacity=".5"/>
-          <text x="890" y="215" fill="#fff">圃場全体　<tspan fill="#c9f27a" font-weight="600" style="font-family:'Inter Tight',sans-serif">FieldVerse</tspan></text>
-          <rect x="874" y="242" width="282" height="44" rx="2" fill="none" stroke="#4fd6c9" stroke-opacity=".5"/>
-          <text x="890" y="269" fill="#fff">農作業者　<tspan fill="#c9f27a" font-weight="600" style="font-family:'Inter Tight',sans-serif">AgriEgo4D</tspan></text>
-          <text x="874" y="330" fill="#4fd6c9" font-size="12.5">LVLM・世界モデル・シミュレーション</text>
-        </g>
-        <!-- arrows -->
-        <path d="M340 150 C 480 105, 700 105, 840 150" fill="none" stroke="#0b1a16" stroke-width="1.5" marker-end="url(#ah)"/>
-        <text x="590" y="58" text-anchor="middle" font-size="12" letter-spacing="2" fill="#5d6a64" class="mono">VIRTUALIZATION</text>
-        <text x="590" y="84" text-anchor="middle" font-size="16" font-weight="700" fill="#0b1a16" class="ja">栽培仮想化（デジタルツイン構築）</text>
-        <path d="M840 255 C 700 300, 480 300, 340 255" fill="none" stroke="#2aa79b" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#ah2)"/>
-        <text x="590" y="332" text-anchor="middle" font-size="16" font-weight="700" fill="#0b1a16" class="ja">最適作業の提案・ロボットへのフィードバック</text>
-        <text x="590" y="356" text-anchor="middle" font-size="12" letter-spacing="2" fill="#2aa79b" class="mono">FEEDBACK</text>
-        <!-- center -->
-        <circle cx="590" cy="200" r="74" fill="#f5f4ee" stroke="#0b1a16"/>
-        <circle cx="590" cy="200" r="86" fill="none" stroke="#0b1a16" stroke-opacity=".2" stroke-dasharray="2 4"/>
-        <text x="590" y="193" text-anchor="middle" font-size="15" font-weight="700" fill="#0b1a16" class="ja">ツイン農業</text>
-        <text x="590" y="216" text-anchor="middle" font-size="12" fill="#5d6a64" class="ja">プラットフォーム</text>
-      </svg>
-    </div>
+    <figure class="twin-fig rv">
+      <div class="tf-panel tf-real">
+        <img src="assets/img/twin-real.jpg" alt="" loading="lazy">
+        <span class="tf-tag"><i></i>実空間</span>
+        <ul class="tf-real-list"><li>ドローン</li><li>気象・環境センサ</li><li>農業ロボット</li><li>農作業者</li></ul>
+      </div>
+      <div class="tf-center">
+        <svg class="tf-arcs" viewBox="0 0 300 520" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="gTop" x1="0" x2="1"><stop offset="0" stop-color="#8fd16a"/><stop offset="1" stop-color="#4fd6c9"/></linearGradient>
+            <linearGradient id="gBot" x1="1" x2="0"><stop offset="0" stop-color="#4fd6c9"/><stop offset="1" stop-color="#8fd16a"/></linearGradient>
+          </defs>
+          <path class="arc arc-top" d="M8 175 C 60 40, 240 40, 292 175" stroke="url(#gTop)"/>
+          <path class="arc arc-bot" d="M292 345 C 240 480, 60 480, 8 345" stroke="url(#gBot)"/>
+          <path d="M282 160 L292 176 L297 158" fill="none" stroke="#4fd6c9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18 360 L8 344 L3 362" fill="none" stroke="#8fd16a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="tf-label tf-label-top"><b>栽培仮想化</b><small>デジタルツインの構築・解析・予測</small></div>
+        <div class="tf-core">
+          <div class="tf-ring"></div><span class="orb o1">LLM / LVLM</span><span class="orb o2">エージェント</span><span class="orb o3">世界モデル</span><span class="orb o4">シミュレーション</span><span class="orb o5">最適栽培</span>
+          <div class="tf-core-in"><span class="tf-core-title">ツイン農業<br>プラットフォーム</span><span class="tf-core-sub">未知の知見創出</span></div>
+        </div>
+        <div class="tf-label tf-label-bot"><b>現場へのフィードバック</b><small>最適作業の提案・ロボット・意思決定支援</small></div>
+      </div>
+      <div class="tf-panel tf-virtual">
+        <div class="tf-vimg"><img src="assets/img/twin-virtual.jpg" alt="" loading="lazy"><span class="tf-tag tf-tag-v"><i></i>仮想空間</span></div>
+        <ul class="tf-scales">
+            <li class="tf-scale"><img src="assets/img/twin-icon-plant.jpg" alt="" loading="lazy"><div><span class="tf-num">01</span><b>植物個体</b><em>PlantTwin</em><small>枝葉レベルの3D構造 · 時系列生育モデリング · 成長予測</small></div></li>
+            <li class="tf-scale"><img src="assets/img/twin-icon-field.jpg" alt="" loading="lazy"><div><span class="tf-num">02</span><b>圃場全体</b><em>FieldVerse</em><small>圃場4Dモデリング · 生育データの空間分布 · 生育・収量・病害マップ</small></div></li>
+            <li class="tf-scale"><img src="assets/img/twin-icon-farmer.jpg" alt="" loading="lazy"><div><span class="tf-num">03</span><b>農作業者</b><em>AgriEgo4D</em><small>視点映像からの動作理解 · 動作・作業軌跡 · 暗黙知・判断プロセス</small></div></li>
+        </ul>
+      </div>
+      <figcaption>実空間と仮想空間の両方で栽培し、最適な作業を実空間へフィードバックする。</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -143,25 +135,28 @@
     </div>
     <div class="challenge-grid">
       <div class="challenge-item rv">
+        <figure class="ch-img"><img src="assets/img/challenge-plant.jpg" alt="植物個体の枝葉" loading="lazy"><figcaption><span>類似した見た目</span><span>薄い葉</span><span>枝の遮蔽</span></figcaption></figure>
         <span class="scale">SCALE 01 — PLANT</span>
         <h3>細い枝、薄い葉、<br>大量の遮蔽と成長変化</h3>
         <p>植物はコンピュータビジョンにとって最も挑戦的な対象のひとつ。果実を見つけるだけでは、剪定や誘引のような専門的な作業には届きません。</p>
         <div class="challenge-q"><span>葉の枚数・形状は？</span><span>枝構造は？</span></div>
       </div>
       <div class="challenge-item rv d1">
+        <figure class="ch-img"><img src="assets/img/challenge-field.jpg" alt="圃場（ぶどう畑）" loading="lazy"><small class="ch-credit"><a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Original_1986_Syrah_planting_at_Red_Willow.jpg" target="_blank" rel="noopener">Photo: Agne27</a> / <a class="photo-credit" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a></small><figcaption><span>入り組んだ枝</span><span>複雑な形状</span></figcaption></figure>
         <span class="scale">SCALE 02 — FIELD</span>
         <h3>入り組んだ枝が連なる、<br>広大で変化し続ける圃場</h3>
         <p>大規模・高密度な圃場では、個体ごとの切り分けや、作物・環境情報の継続的な更新が必要です。</p>
         <div class="challenge-q"><span>個体（株）ごとに切り分けられるか？</span></div>
       </div>
       <div class="challenge-item rv d2">
+        <figure class="ch-img"><img src="assets/img/challenge-farmer.jpg" alt="剪定作業を行う農作業者" loading="lazy"><figcaption><span>高度な暗黙知</span><span>複雑な対象</span></figcaption></figure>
         <span class="scale">SCALE 03 — FARMER</span>
         <h3>熟練者の判断に宿る、<br>言語化されない暗黙知</h3>
         <p>農作業は単なる身体動作ではなく、植物の状態理解と経験に裏打ちされた高度な知的行為です。</p>
         <div class="challenge-q"><span>どの枝を剪定している？</span><span>なぜその枝を剪定した？</span></div>
       </div>
     </div>
-    <p class="challenge-note rv">「圃場内のどの株に対し、どの枝を、どのような意図で剪定しているか」——<br>この問いに答えるには、三つのスケールを相互に結びつけて仮想化する必要があります。</p>
+    <p class="challenge-note rv"><span class="eg">例えば</span>「圃場内のどの株に対し、どの枝を、どのような意図で剪定しているか」——<br>この問いに答えるには、三つのスケールを相互に結びつけて仮想化する必要があります。</p>
   </div>
 </section>
 
@@ -315,29 +310,31 @@
     </div>
     <div class="pis">
       <div class="pi rv">
-        <!-- 写真を入れる場合: <div class="avatar"><img src="assets/img/okura.jpg" alt="大倉 史生"></div> -->
-        <div class="avatar"><span class="initial">F.O.</span></div>
+        <a class="avatar" href="https://researchmap.jp/okura.fumio" target="_blank" rel="noopener"><img src="assets/img/member-okura.jpg" alt="大倉 史生" loading="lazy"><span class="avatar-go">↗</span></a>
         <span class="role">PRINCIPAL INVESTIGATOR</span>
         <h3>大倉 史生</h3>
         <span class="en-name">Fumio Okura</span>
         <p class="aff">大阪大学 産業科学研究所 准教授</p>
         <span class="theme">研究統括 / PlantTwin / Platform</span>
+        <a class="link" href="https://researchmap.jp/okura.fumio" target="_blank" rel="noopener">ウェブサイト ↗</a>
       </div>
       <div class="pi rv d1">
-        <div class="avatar"><span class="initial">W.G.</span></div>
+        <a class="avatar" href="https://lab.fieldphenomics.com/" target="_blank" rel="noopener"><img src="assets/img/member-guo.jpg" alt="郭 威" loading="lazy"><span class="avatar-go">↗</span></a>
         <span class="role">CO-PRINCIPAL INVESTIGATOR</span>
         <h3>郭 威</h3>
         <span class="en-name">Wei Guo</span>
         <p class="aff">東京大学 大学院農学生命科学研究科 准教授</p>
         <span class="theme">FieldVerse</span>
+        <a class="link" href="https://lab.fieldphenomics.com/" target="_blank" rel="noopener">ウェブサイト ↗</a>
       </div>
       <div class="pi rv d2">
-        <div class="avatar"><span class="initial">Y.S.</span></div>
+        <a class="avatar" href="https://www.ut-vision.org/sato-lab/" target="_blank" rel="noopener"><img src="assets/img/member-sato.jpg" alt="佐藤 洋一" loading="lazy"><span class="avatar-go">↗</span></a>
         <span class="role">CO-PRINCIPAL INVESTIGATOR</span>
         <h3>佐藤 洋一</h3>
         <span class="en-name">Yoichi Sato</span>
         <p class="aff">東京大学 生産技術研究所 教授</p>
         <span class="theme">AgriEgo4D</span>
+        <a class="link" href="https://www.ut-vision.org/sato-lab/" target="_blank" rel="noopener">ウェブサイト ↗</a>
       </div>
     </div>
 

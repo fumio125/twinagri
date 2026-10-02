@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Twin Agriculture | JST CREST Project</title>
-<meta name="description" content="JST CREST project on multi-scale spatio-temporal virtualization of cultivation environments for Twin Agriculture — virtualizing plants, fields, and farmers.">
+<meta name="description" content="JST CREST project "Multiscale Spatiotemporal Virtualization of Cultivation Environments for Twin Agriculture" — virtualizing plants, fields, and farmers.">
 <meta property="og:title" content="Twin Agriculture | JST CREST Project">
 <meta property="og:description" content="Virtualizing cultivation across three scales: plants, fields, and farmers.">
 <meta property="og:type" content="website">
@@ -38,6 +38,7 @@
       <a href="#roadmap">Roadmap</a>
       <a href="#members">Members</a>
       <a href="#news">News</a>
+      <a href="#publications">Publications</a>
       <a href="#contact">Contact</a>
       <span class="lang"><a href="../" hreflang="ja">JA</a><span><b>EN</b></span></span>
     </nav>
@@ -50,14 +51,11 @@
 <section class="hero" id="top">
   <canvas id="twin-canvas" aria-hidden="true"></canvas>
   <div class="hero-grid" aria-hidden="true"></div>
-  <div class="hero-labels" aria-hidden="true">
-    <div class="wrap"><span class="real">REAL SPACE</span><span class="virtual">VIRTUAL SPACE</span></div>
-  </div>
   <div class="hero-inner wrap">
     <p class="hero-kicker">JST CREST — 2026–2032</p>
     <h1>Twin<br><span class="thin">Agriculture</span></h1>
     <div class="hero-sub">
-      <p class="hero-title-ja">Multi-scale spatio-temporal virtualization<br>of cultivation environments for Twin Agriculture</p>
+      <p class="hero-title-ja">Multiscale Spatiotemporal Virtualization<br>of Cultivation Environments for Twin Agriculture</p>
       <p class="hero-meta">PI　Fumio Okura (SANKEN, Osaka University)<br>JST CREST · Digital Spatio-Temporal Expansion<br>Period　Oct 2026 – Mar 2032</p>
     </div>
   </div>
@@ -77,53 +75,51 @@
 
     <p class="vision-lead rv">Cultivation is an interaction between plants and people. We virtualize the entire cultivation environment to build the foundations of <em>Twin Agriculture</em> — growing crops in real and virtual space at once.</p>
 
-    <div class="vision-body">
-      <div class="year rv">203X</div>
-      <p class="rv d1">Every task carried out in the field is continuously recorded by drones, robots and farmers' own viewpoints, and mirrored in real time onto a virtual farm — the Twin Agriculture Platform. There, detailed plant structure and growth forecasts, the state of the whole field, and the know-how of farmers are fused, and the next optimal action is fed back to people and robots.</p>
-      <p class="rv d2">"Smart agriculture" has so far delivered harvesting, spraying, and relatively simple disease detection. Supporting the skilled, everyday work of farming — pruning, training, growth forecasting and yield maximization — requires virtualizing every leaf and branch, and even the intent of experienced farmers. This project takes on that bottleneck directly.</p>
+    <div class="contrast">
+      <div class="contrast-col future rv d1">
+        <span class="contrast-tag">203X — THE FUTURE</span>
+        <p>Every task carried out in the field is continuously recorded by drones, robots and farmers' own viewpoints, and mirrored in real time onto a virtual farm — the Twin Agriculture Platform. There, detailed plant structure and growth forecasts, the state of the whole field, and the know-how of farmers are fused, and the next optimal action is fed back to people and robots.</p>
+      </div>
+      <div class="contrast-col today rv d2">
+        <span class="contrast-tag">TODAY — THE GAP</span>
+        <p>"Smart agriculture" has so far delivered harvesting, spraying, and relatively simple disease detection. Supporting the skilled, everyday work of farming — pruning, training, growth forecasting and yield maximization — requires virtualizing every leaf and branch, and even the intent of experienced farmers. This project takes on that bottleneck directly.</p>
+      </div>
     </div>
 
-    <div class="loop rv">
-      <svg class="loop-svg" viewBox="0 0 1180 400" role="img" aria-label="The Twin Agriculture loop connecting real and virtual space">
-        <defs>
-          <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0b1a16"/></marker>
-          <marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2aa79b"/></marker>
-          <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#4fd6c9" opacity=".5"/></pattern>
-        </defs>
-        <rect x="0.5" y="40.5" width="330" height="320" rx="4" fill="#fff" stroke="#0b1a16" stroke-opacity=".15"/>
-        <text x="24" y="76" font-size="12" letter-spacing="2" fill="#5d6a64">REAL SPACE</text>
-        <text x="24" y="108" font-size="26" font-weight="600" fill="#0b1a16">Real world</text>
-        <g font-size="15" fill="#1a2420">
-          <text x="24" y="160">● Fields &amp; orchards</text>
-          <text x="24" y="194">● Farmers</text>
-          <text x="24" y="228">● Drones &amp; robots</text>
-          <text x="24" y="262">● Environmental sensors</text>
-        </g>
-        <rect x="849.5" y="40.5" width="330" height="320" rx="4" fill="#0b1a16"/>
-        <rect x="849.5" y="40.5" width="330" height="320" rx="4" fill="url(#dots)" opacity=".35"/>
-        <text x="874" y="76" font-size="12" letter-spacing="2" fill="#4fd6c9">VIRTUAL SPACE</text>
-        <text x="874" y="108" font-size="26" font-weight="600" fill="#fff">Digital twin</text>
-        <g font-size="14">
-          <rect x="874" y="134" width="282" height="44" rx="2" fill="none" stroke="#4fd6c9" stroke-opacity=".5"/>
-          <text x="890" y="161" fill="#fff">Plant　<tspan fill="#c9f27a" font-weight="600">PlantTwin</tspan></text>
-          <rect x="874" y="188" width="282" height="44" rx="2" fill="none" stroke="#4fd6c9" stroke-opacity=".5"/>
-          <text x="890" y="215" fill="#fff">Field　<tspan fill="#c9f27a" font-weight="600">FieldVerse</tspan></text>
-          <rect x="874" y="242" width="282" height="44" rx="2" fill="none" stroke="#4fd6c9" stroke-opacity=".5"/>
-          <text x="890" y="269" fill="#fff">Farmer　<tspan fill="#c9f27a" font-weight="600">AgriEgo4D</tspan></text>
-          <text x="874" y="330" fill="#4fd6c9" font-size="12.5">LVLMs · world models · simulation</text>
-        </g>
-        <path d="M340 150 C 480 105, 700 105, 840 150" fill="none" stroke="#0b1a16" stroke-width="1.5" marker-end="url(#ah)"/>
-        <text x="590" y="58" text-anchor="middle" font-size="12" letter-spacing="2" fill="#5d6a64">VIRTUALIZATION</text>
-        <text x="590" y="84" text-anchor="middle" font-size="16" font-weight="600" fill="#0b1a16">Building the digital twin of cultivation</text>
-        <path d="M840 255 C 700 300, 480 300, 340 255" fill="none" stroke="#2aa79b" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#ah2)"/>
-        <text x="590" y="332" text-anchor="middle" font-size="16" font-weight="600" fill="#0b1a16">Optimal-task suggestions to farmers &amp; robots</text>
-        <text x="590" y="356" text-anchor="middle" font-size="12" letter-spacing="2" fill="#2aa79b">FEEDBACK</text>
-        <circle cx="590" cy="200" r="74" fill="#f5f4ee" stroke="#0b1a16"/>
-        <circle cx="590" cy="200" r="86" fill="none" stroke="#0b1a16" stroke-opacity=".2" stroke-dasharray="2 4"/>
-        <text x="590" y="194" text-anchor="middle" font-size="16" font-weight="600" fill="#0b1a16">Twin Agriculture</text>
-        <text x="590" y="216" text-anchor="middle" font-size="12.5" fill="#5d6a64">Platform</text>
-      </svg>
-    </div>
+    <figure class="twin-fig rv">
+      <div class="tf-panel tf-real">
+        <img src="../assets/img/twin-real.jpg" alt="" loading="lazy">
+        <span class="tf-tag"><i></i>Real space</span>
+        <ul class="tf-real-list"><li>Drones</li><li>Weather & environmental sensors</li><li>Agricultural robots</li><li>Farmers</li></ul>
+      </div>
+      <div class="tf-center">
+        <svg class="tf-arcs" viewBox="0 0 300 520" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="gTop" x1="0" x2="1"><stop offset="0" stop-color="#8fd16a"/><stop offset="1" stop-color="#4fd6c9"/></linearGradient>
+            <linearGradient id="gBot" x1="1" x2="0"><stop offset="0" stop-color="#4fd6c9"/><stop offset="1" stop-color="#8fd16a"/></linearGradient>
+          </defs>
+          <path class="arc arc-top" d="M8 175 C 60 40, 240 40, 292 175" stroke="url(#gTop)"/>
+          <path class="arc arc-bot" d="M292 345 C 240 480, 60 480, 8 345" stroke="url(#gBot)"/>
+          <path d="M282 160 L292 176 L297 158" fill="none" stroke="#4fd6c9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18 360 L8 344 L3 362" fill="none" stroke="#8fd16a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="tf-label tf-label-top"><b>Virtualization</b><small>Building, analyzing & predicting the digital twin</small></div>
+        <div class="tf-core">
+          <div class="tf-ring"></div><span class="orb o1">LLM / LVLM</span><span class="orb o2">Agents</span><span class="orb o3">World models</span><span class="orb o4">Simulation</span><span class="orb o5">Optimization</span>
+          <div class="tf-core-in"><span class="tf-core-title">Twin Agriculture<br>Platform</span><span class="tf-core-sub">New discoveries</span></div>
+        </div>
+        <div class="tf-label tf-label-bot"><b>Feedback to the field</b><small>Optimal-task suggestions, robots, decision support</small></div>
+      </div>
+      <div class="tf-panel tf-virtual">
+        <div class="tf-vimg"><img src="../assets/img/twin-virtual.jpg" alt="" loading="lazy"><span class="tf-tag tf-tag-v"><i></i>Virtual space</span></div>
+        <ul class="tf-scales">
+            <li class="tf-scale"><img src="../assets/img/twin-icon-plant.jpg" alt="" loading="lazy"><div><span class="tf-num">01</span><b>Plant</b><em>PlantTwin</em><small>Branch- & leaf-level 3D structure · Temporal growth modeling · Growth prediction</small></div></li>
+            <li class="tf-scale"><img src="../assets/img/twin-icon-field.jpg" alt="" loading="lazy"><div><span class="tf-num">02</span><b>Field</b><em>FieldVerse</em><small>4D field modeling · Spatial growth data · Growth, yield & disease maps</small></div></li>
+            <li class="tf-scale"><img src="../assets/img/twin-icon-farmer.jpg" alt="" loading="lazy"><div><span class="tf-num">03</span><b>Farmer</b><em>AgriEgo4D</em><small>Action understanding from egocentric video · Motion & work trajectories · Tacit knowledge & decisions</small></div></li>
+        </ul>
+      </div>
+      <figcaption>Cultivating in both real and virtual space, and feeding optimal actions back to the field.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -139,25 +135,28 @@
     </div>
     <div class="challenge-grid">
       <div class="challenge-item rv">
+        <figure class="ch-img"><img src="../assets/img/challenge-plant.jpg" alt="Leaves and branches of a plant" loading="lazy"><figcaption><span>Similar appearance</span><span>Thin leaves</span><span>Occluded branches</span></figcaption></figure>
         <span class="scale">SCALE 01 — PLANT</span>
         <h3>Thin branches, thin leaves, heavy occlusion, constant growth</h3>
         <p>Plants are among the most challenging subjects for computer vision. Finding fruit is not enough to support skilled tasks such as pruning and training.</p>
         <div class="challenge-q"><span>How many leaves, what shape?</span><span>What is the branch structure?</span></div>
       </div>
       <div class="challenge-item rv d1">
+        <figure class="ch-img"><img src="../assets/img/challenge-field.jpg" alt="A vineyard" loading="lazy"><small class="ch-credit"><a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Original_1986_Syrah_planting_at_Red_Willow.jpg" target="_blank" rel="noopener">Photo: Agne27</a> / <a class="photo-credit" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a></small><figcaption><span>Tangled branches</span><span>Complex shapes</span></figcaption></figure>
         <span class="scale">SCALE 02 — FIELD</span>
         <h3>Vast, dense fields that never stop changing</h3>
         <p>Large, densely planted fields require separating individual plants and continuously updating crop and environmental information.</p>
         <div class="challenge-q"><span>Can each plant be segmented?</span></div>
       </div>
       <div class="challenge-item rv d2">
+        <figure class="ch-img"><img src="../assets/img/challenge-farmer.jpg" alt="A farmer pruning a vine" loading="lazy"><figcaption><span>Tacit expertise</span><span>Complex targets</span></figcaption></figure>
         <span class="scale">SCALE 03 — FARMER</span>
         <h3>Tacit knowledge behind expert decisions</h3>
         <p>Farm work is not just physical motion; it is an intellectual act grounded in understanding the plant and years of experience.</p>
         <div class="challenge-q"><span>Which branch is being pruned?</span><span>Why that branch?</span></div>
       </div>
     </div>
-    <p class="challenge-note rv">"Which plant in the field, which branch, and with what intention is this person pruning?" — answering this requires virtualizing all three scales and linking them together.</p>
+    <p class="challenge-note rv"><span class="eg">For example:</span> "Which plant in the field, which branch, and with what intention is this person pruning?" — answering this requires virtualizing all three scales and linking them together.</p>
   </div>
 </section>
 
@@ -307,28 +306,31 @@
     </div>
     <div class="pis">
       <div class="pi rv">
-        <div class="avatar"><span class="initial">F.O.</span></div>
+        <a class="avatar" href="https://researchmap.jp/okura.fumio" target="_blank" rel="noopener"><img src="../assets/img/member-okura.jpg" alt="Fumio Okura" loading="lazy"><span class="avatar-go">↗</span></a>
         <span class="role">PRINCIPAL INVESTIGATOR</span>
         <h3 class="en">Fumio Okura</h3>
         <span class="en-name">大倉 史生</span>
         <p class="aff">Associate Professor, SANKEN (Institute of Scientific and Industrial Research), Osaka University</p>
         <span class="theme">Project lead / PlantTwin / Platform</span>
+        <a class="link" href="https://researchmap.jp/okura.fumio" target="_blank" rel="noopener">Website ↗</a>
       </div>
       <div class="pi rv d1">
-        <div class="avatar"><span class="initial">W.G.</span></div>
+        <a class="avatar" href="https://lab.fieldphenomics.com/" target="_blank" rel="noopener"><img src="../assets/img/member-guo.jpg" alt="Wei Guo" loading="lazy"><span class="avatar-go">↗</span></a>
         <span class="role">CO-PRINCIPAL INVESTIGATOR</span>
         <h3 class="en">Wei Guo</h3>
         <span class="en-name">郭 威</span>
         <p class="aff">Associate Professor, Graduate School of Agricultural and Life Sciences, The University of Tokyo</p>
         <span class="theme">FieldVerse</span>
+        <a class="link" href="https://lab.fieldphenomics.com/" target="_blank" rel="noopener">Website ↗</a>
       </div>
       <div class="pi rv d2">
-        <div class="avatar"><span class="initial">Y.S.</span></div>
+        <a class="avatar" href="https://www.ut-vision.org/sato-lab/" target="_blank" rel="noopener"><img src="../assets/img/member-sato.jpg" alt="Yoichi Sato" loading="lazy"><span class="avatar-go">↗</span></a>
         <span class="role">CO-PRINCIPAL INVESTIGATOR</span>
         <h3 class="en">Yoichi Sato</h3>
         <span class="en-name">佐藤 洋一</span>
         <p class="aff">Professor, Institute of Industrial Science, The University of Tokyo</p>
         <span class="theme">AgriEgo4D</span>
+        <a class="link" href="https://www.ut-vision.org/sato-lab/" target="_blank" rel="noopener">Website ↗</a>
       </div>
     </div>
 
@@ -354,7 +356,7 @@
       <div><h2 class="sec-title">News</h2></div>
     </div>
     <ul class="news-list rv">
-      <li><time datetime="2026-10-01">2026.10.01</time><span class="cat">PROJECT</span><span>The JST CREST project "Multi-scale spatio-temporal virtualization of cultivation environments for Twin Agriculture" has started.</span></li>
+      <li><time datetime="2026-10-01">2026.10.01</time><span class="cat">PROJECT</span><span>The JST CREST project "Multiscale Spatiotemporal Virtualization of Cultivation Environments for Twin Agriculture" has started.</span></li>
       <li><time datetime="2026-10-01">2026.10.01</time><span class="cat">WEB</span><span>Project website launched.</span></li>
     </ul>
   </div>
