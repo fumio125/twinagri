@@ -113,9 +113,9 @@
       <div class="tf-panel tf-virtual">
         <div class="tf-vimg"><img src="assets/img/twin-virtual.jpg" alt="" loading="lazy"><span class="tf-tag tf-tag-v"><i></i>仮想空間</span></div>
         <ul class="tf-scales">
-            <li class="tf-scale"><img src="assets/img/twin-icon-plant.jpg" alt="" loading="lazy"><div><span class="tf-num">01</span><b>植物個体</b><em>PlantTwin</em><small>枝葉レベルの3D構造 · 時系列生育モデリング · 成長予測</small></div></li>
-            <li class="tf-scale"><img src="assets/img/twin-icon-field.jpg" alt="" loading="lazy"><div><span class="tf-num">02</span><b>圃場全体</b><em>FieldVerse</em><small>圃場4Dモデリング · 生育データの空間分布 · 生育・収量・病害マップ</small></div></li>
-            <li class="tf-scale"><img src="assets/img/twin-icon-farmer.jpg" alt="" loading="lazy"><div><span class="tf-num">03</span><b>農作業者</b><em>AgriEgo4D</em><small>視点映像からの動作理解 · 動作・作業軌跡 · 暗黙知・判断プロセス</small></div></li>
+            <li class="tf-scale"><img src="assets/img/twin-icon-plant.jpg" alt="" loading="lazy"><div><span class="tf-num">01</span><b>植物個体</b><em>Plant-level</em><small>枝葉レベルの3D構造 · 時系列生育モデリング · 成長予測</small></div></li>
+            <li class="tf-scale"><img src="assets/img/twin-icon-field.jpg" alt="" loading="lazy"><div><span class="tf-num">02</span><b>圃場全体</b><em>Field-level</em><small>圃場4Dモデリング · 生育データの空間分布 · 生育・収量・病害マップ</small></div></li>
+            <li class="tf-scale"><img src="assets/img/twin-icon-farmer.jpg" alt="" loading="lazy"><div><span class="tf-num">03</span><b>農作業者</b><em>Farmer-level</em><small>視点映像からの動作理解 · 動作・作業軌跡 · 暗黙知・判断プロセス</small></div></li>
         </ul>
       </div>
       <figcaption>実空間と仮想空間の両方で栽培し、最適な作業を実空間へフィードバックする。</figcaption>
@@ -173,7 +173,7 @@
 
     <div class="projects">
       <article class="project rv">
-        <span class="num">THEME 01</span>
+        <span class="num">THEME 01 — PLANT-LEVEL</span>
         <div class="glyph" aria-hidden="true">
           <svg viewBox="0 0 300 150" fill="none">
             <g stroke="#0b1a16" stroke-width="1.4" stroke-linecap="round">
@@ -184,7 +184,7 @@
             <path d="M60 145h180" stroke="#0b1a16" stroke-opacity=".2"/>
           </svg>
         </div>
-        <h3>PlantTwin</h3>
+        <h3>Plant-level Virtualization</h3>
         <p class="scale-ja">植物個体レベル仮想化</p>
         <p>枝一本・葉一枚・果実一つのレベルで植物個体の三次元構造を復元し、同一器官の時系列対応付けや成長予測へと拡張します。手続き型モデリング、大規模言語モデル、物理シミュレーションを取り入れ、成長・力学・作業結果を予測できる「仮想植物」を実現します。</p>
         <div class="tags"><span>3D reconstruction</span><span>Occlusion</span><span>Growth modeling</span><span>Procedural model</span></div>
@@ -192,7 +192,7 @@
       </article>
 
       <article class="project rv d1">
-        <span class="num">THEME 02</span>
+        <span class="num">THEME 02 — FIELD-LEVEL</span>
         <div class="glyph" aria-hidden="true">
           <svg viewBox="0 0 300 150" fill="none">
             <g stroke="#0b1a16" stroke-opacity=".9" stroke-width="1.2">
@@ -207,7 +207,7 @@
             <path d="M219 26L200 56" stroke="#0b1a16" stroke-dasharray="2 3"/>
           </svg>
         </div>
-        <h3>FieldVerse</h3>
+        <h3>Field-level Virtualization</h3>
         <p class="scale-ja">圃場レベル仮想化</p>
         <p>ドローン・地上ロボット・環境センサ等から得られるRGB・マルチスペクトル・LiDARデータを統合し、作物分布、生育状態、環境情報とその時系列変化を4D仮想空間にマッピング。継続的かつ即応的に更新される圃場のデジタルツインを構築します。</p>
         <div class="tags"><span>UAV</span><span>4D mapping</span><span>Phenomics</span><span>Multispectral / LiDAR</span></div>
@@ -215,7 +215,7 @@
       </article>
 
       <article class="project rv d2">
-        <span class="num">THEME 03</span>
+        <span class="num">THEME 03 — FARMER-LEVEL</span>
         <div class="glyph" aria-hidden="true">
           <svg viewBox="0 0 300 150" fill="none">
             <path d="M70 75c20-26 50-40 80-40s60 14 80 40c-20 26-50 40-80 40s-60-14-80-40z" stroke="#0b1a16" stroke-width="1.4"/>
@@ -226,10 +226,10 @@
             <path d="M255 70h-12M269 70h12M262 63v-12M262 77v12" stroke="#8fd16a"/>
           </svg>
         </div>
-        <h3>AgriEgo4D</h3>
-        <p class="scale-ja">農作業者レベル仮想化</p>
-        <p>一人称視点デバイス（Meta Aria等）と三人称視点映像、作業ログを組み合わせ、作業者の視線・動作・移動・判断過程を記述します。大規模一人称視点データ収集プロジェクトEgo4Dを礎に、熟練者の暗黙知を植物・圃場の状態と結びつけて理解します。</p>
-        <div class="tags"><span>Egocentric vision</span><span>Action understanding</span><span>Gaze</span><span>VLM</span></div>
+        <h3>Understanding Skilled Farm Work</h3>
+        <p class="scale-ja">熟練農作業の理解</p>
+        <p>映像をはじめとする多様な情報から、農作業者が周囲の環境をどのように捉え、行動しているかを理解する研究に取り組んでいます。熟練者が持つ経験や知識と、植物・圃場の状態との関係を捉え、次世代の農業支援につながるAI技術を目指します。</p>
+        <div class="tags"><span>Agricultural AI</span><span>Human-centered vision</span><span>Skill understanding</span></div>
         <p class="lead">担当　<b>佐藤・篠田グループ</b>（東京大学）</p>
       </article>
     </div>
@@ -315,7 +315,7 @@
         <h3>大倉 史生</h3>
         <span class="en-name">Fumio Okura</span>
         <p class="aff">大阪大学 産業科学研究所 准教授</p>
-        <span class="theme">研究統括 / PlantTwin / Platform</span>
+        <span class="theme">研究統括 / Plant-level / Platform</span>
         <a class="link" href="https://fokura.jp/" target="_blank" rel="noopener">ウェブサイト ↗</a>
       </div>
       <div class="pi rv d1">
@@ -324,7 +324,7 @@
         <h3>郭 威</h3>
         <span class="en-name">Wei Guo</span>
         <p class="aff">東京大学 大学院農学生命科学研究科 准教授</p>
-        <span class="theme">FieldVerse</span>
+        <span class="theme">Field-level</span>
         <a class="link" href="https://lab.fieldphenomics.com/" target="_blank" rel="noopener">ウェブサイト ↗</a>
       </div>
       <div class="pi rv d2">
@@ -333,7 +333,7 @@
         <h3>佐藤 洋一</h3>
         <span class="en-name">Yoichi Sato</span>
         <p class="aff">東京大学 生産技術研究所 教授</p>
-        <span class="theme">AgriEgo4D</span>
+        <span class="theme">Farmer-level</span>
         <a class="link" href="https://www.ut-vision.org/sato-lab/" target="_blank" rel="noopener">ウェブサイト ↗</a>
       </div>
     </div>
@@ -342,7 +342,7 @@
       <h4>COLLABORATORS<br>研究参加者</h4>
       <div class="cg-list">
         <div class="cg">
-          <div class="cg-head"><span class="cg-tag">PLANTTWIN · PLATFORM</span><b>大倉グループ</b><small>大阪大学</small></div>
+          <div class="cg-head"><span class="cg-tag">PLANT-LEVEL · PLATFORM</span><b>大倉グループ</b><small>大阪大学</small></div>
           <table>
             <tr><td>中島 悠太</td><td>大阪大学 産業科学研究所 教授</td></tr>
             <tr><td>Chan Weng Ian</td><td>大阪大学 産業科学研究所 特任研究員</td></tr>
@@ -350,19 +350,17 @@
           </table>
         </div>
         <div class="cg">
-          <div class="cg-head"><span class="cg-tag">FIELDVERSE</span><b>郭グループ</b><small>東京大学</small></div>
+          <div class="cg-head"><span class="cg-tag">FIELD-LEVEL</span><b>郭グループ</b><small>東京大学</small></div>
           <table>
             <tr><td>陳 思遥</td><td>東京大学 大学院農学生命科学研究科 助教</td></tr>
             <tr><td>岡田 眞銀</td><td>東京大学 大学院農学生命科学研究科 特任研究員</td></tr>
           </table>
         </div>
         <div class="cg">
-          <div class="cg-head"><span class="cg-tag">AGRIEGO4D</span><b>佐藤・篠田グループ</b><small>東京大学</small></div>
+          <div class="cg-head"><span class="cg-tag">FARMER-LEVEL</span><b>佐藤・篠田グループ</b><small>東京大学</small></div>
           <table>
             <tr><td>篠田 理沙</td><td>東京大学 生産技術研究所 助教</td></tr>
             <tr><td>波多野 雅</td><td>東京大学 生産技術研究所 特任研究員</td></tr>
-            <tr><td>西保 匠</td><td>東京大学 生産技術研究所 協力研究員</td></tr>
-            <tr><td>Mingfang Zhang</td><td>東京大学 生産技術研究所 協力研究員</td></tr>
           </table>
         </div>
       </div>
