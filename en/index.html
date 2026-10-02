@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twin Agriculture | JST CREST Project</title>
+<meta name="description" content="JST CREST project on multi-scale spatio-temporal virtualization of cultivation environments for Twin Agriculture — virtualizing plants, fields, and farmers.">
+<meta property="og:title" content="Twin Agriculture | JST CREST Project">
+<meta property="og:description" content="Virtualizing cultivation across three scales: plants, fields, and farmers.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.twinagri.org/en/">
+<meta property="og:image" content="https://www.twinagri.org/assets/img/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.twinagri.org/en/">
+<link rel="alternate" hreflang="ja" href="https://www.twinagri.org/">
+<link rel="alternate" hreflang="en" href="https://www.twinagri.org/en/">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;1,300&family=JetBrains+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <circle cx="12" cy="16" r="9" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="20" cy="16" r="9" stroke="#4fd6c9" stroke-width="1.5" stroke-dasharray="2 2"/>
+        <path d="M16 24V12M16 15l-3-3M16 18l3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">Twin Agriculture<small>JST CREST</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#vision">Vision</a>
+      <a href="#research">Research</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#members">Members</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <span class="lang"><a href="../" hreflang="ja">JA</a><span><b>EN</b></span></span>
+    </nav>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <canvas id="twin-canvas" aria-hidden="true"></canvas>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-labels" aria-hidden="true">
+    <div class="wrap"><span class="real">REAL SPACE</span><span class="virtual">VIRTUAL SPACE</span></div>
+  </div>
+  <div class="hero-inner wrap">
+    <p class="hero-kicker">JST CREST — 2026–2032</p>
+    <h1>Twin<br><span class="thin">Agriculture</span></h1>
+    <div class="hero-sub">
+      <p class="hero-title-ja">Multi-scale spatio-temporal virtualization<br>of cultivation environments for Twin Agriculture</p>
+      <p class="hero-meta">PI　Fumio Okura (SANKEN, Osaka University)<br>JST CREST · Digital Spatio-Temporal Expansion<br>Period　Oct 2026 – Mar 2032</p>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+</section>
+
+<!-- ============ VISION ============ -->
+<section class="sec vision" id="vision">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-label"><b>01</b>VISION</div>
+      <div>
+        <h2 class="sec-title">From experience<br>to optimization.</h2>
+        <span class="sec-title-ja">Agriculture, redesigned in virtual space</span>
+      </div>
+    </div>
+
+    <p class="vision-lead rv">Cultivation is an interaction between plants and people. We virtualize the entire cultivation environment to build the foundations of <em>Twin Agriculture</em> — growing crops in real and virtual space at once.</p>
+
+    <div class="vision-body">
+      <div class="year rv">203X</div>
+      <p class="rv d1">Every task carried out in the field is continuously recorded by drones, robots and farmers' own viewpoints, and mirrored in real time onto a virtual farm — the Twin Agriculture Platform. There, detailed plant structure and growth forecasts, the state of the whole field, and the know-how of farmers are fused, and the next optimal action is fed back to people and robots.</p>
+      <p class="rv d2">"Smart agriculture" has so far delivered harvesting, spraying, and relatively simple disease detection. Supporting the skilled, everyday work of farming — pruning, training, growth forecasting and yield maximization — requires virtualizing every leaf and branch, and even the intent of experienced farmers. This project takes on that bottleneck directly.</p>
+    </div>
+
+    <div class="loop rv">
+      <svg class="loop-svg" viewBox="0 0 1180 400" role="img" aria-label="The Twin Agriculture loop connecting real and virtual space">
+        <defs>
+          <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0b1a16"/></marker>
+          <marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2aa79b"/></marker>
+          <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#4fd6c9" opacity=".5"/></pattern>
+        </defs>
+        <rect x="0.5" y="40.5" width="330" height="320" rx="4" fill="#fff" stroke="#0b1a16" stroke-opacity=".15"/>
+        <text x="24" y="76" font-size="12" letter-spacing="2" fill="#5d6a64">REAL SPACE</text>
+        <text x="24" y="108" font-size="26" font-weight="600" fill="#0b1a16">Real world</text>
+        <g font-size="15" fill="#1a2420">
+          <text x="24" y="160">● Fields &amp; orchards</text>
+          <text x="24" y="194">● Farmers</text>
+          <text x="24" y="228">● Drones &amp; robots</text>
+          <text x="24" y="262">● Environmental sensors</text>
+        </g>
+        <rect x="849.5" y="40.5" width="330" height="320" rx="4" fill="#0b1a16"/>
+        <rect x="849.5" y="40.5" width="330" height="320" rx="4" fill="url(#dots)" opacity=".35"/>
+        <text x="874" y="76" font-size="12" letter-spacing="2" fill="#4fd6c9">VIRTUAL SPACE</text>
+        <text x="874" y="108" font-size="26" font-weight="600" fill="#fff">Digital twin</text>
+        <g font-size="14">
+          <rect x="874" y="134" width="282" height="44" rx="2" fill="none" stroke="#4fd6c9" stroke-opacity=".5"/>
+          <text x="890" y="161" fill="#fff">Plant　<tspan fill="#c9f27a" font-weight="600">PlantTwin</tspan></text>
+          <rect x="874" y="188" width="282" height="44" rx="2" fill="none" stroke="#4fd6c9" stroke-opacity=".5"/>
+          <text x="890" y="215" fill="#fff">Field　<tspan fill="#c9f27a" font-weight="600">FieldVerse</tspan></text>
+          <rect x="874" y="242" width="282" height="44" rx="2" fill="none" stroke="#4fd6c9" stroke-opacity=".5"/>
+          <text x="890" y="269" fill="#fff">Farmer　<tspan fill="#c9f27a" font-weight="600">AgriEgo4D</tspan></text>
+          <text x="874" y="330" fill="#4fd6c9" font-size="12.5">LVLMs · world models · simulation</text>
+        </g>
+        <path d="M340 150 C 480 105, 700 105, 840 150" fill="none" stroke="#0b1a16" stroke-width="1.5" marker-end="url(#ah)"/>
+        <text x="590" y="58" text-anchor="middle" font-size="12" letter-spacing="2" fill="#5d6a64">VIRTUALIZATION</text>
+        <text x="590" y="84" text-anchor="middle" font-size="16" font-weight="600" fill="#0b1a16">Building the digital twin of cultivation</text>
+        <path d="M840 255 C 700 300, 480 300, 340 255" fill="none" stroke="#2aa79b" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#ah2)"/>
+        <text x="590" y="332" text-anchor="middle" font-size="16" font-weight="600" fill="#0b1a16">Optimal-task suggestions to farmers &amp; robots</text>
+        <text x="590" y="356" text-anchor="middle" font-size="12" letter-spacing="2" fill="#2aa79b">FEEDBACK</text>
+        <circle cx="590" cy="200" r="74" fill="#f5f4ee" stroke="#0b1a16"/>
+        <circle cx="590" cy="200" r="86" fill="none" stroke="#0b1a16" stroke-opacity=".2" stroke-dasharray="2 4"/>
+        <text x="590" y="194" text-anchor="middle" font-size="16" font-weight="600" fill="#0b1a16">Twin Agriculture</text>
+        <text x="590" y="216" text-anchor="middle" font-size="12.5" fill="#5d6a64">Platform</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE ============ -->
+<section class="sec challenge" id="challenge">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-label"><b>02</b>CHALLENGE</div>
+      <div>
+        <h2 class="sec-title">Three scales,<br>one cultivation.</h2>
+        <span class="sec-title-ja">Why virtualizing cultivation is hard</span>
+      </div>
+    </div>
+    <div class="challenge-grid">
+      <div class="challenge-item rv">
+        <span class="scale">SCALE 01 — PLANT</span>
+        <h3>Thin branches, thin leaves, heavy occlusion, constant growth</h3>
+        <p>Plants are among the most challenging subjects for computer vision. Finding fruit is not enough to support skilled tasks such as pruning and training.</p>
+        <div class="challenge-q"><span>How many leaves, what shape?</span><span>What is the branch structure?</span></div>
+      </div>
+      <div class="challenge-item rv d1">
+        <span class="scale">SCALE 02 — FIELD</span>
+        <h3>Vast, dense fields that never stop changing</h3>
+        <p>Large, densely planted fields require separating individual plants and continuously updating crop and environmental information.</p>
+        <div class="challenge-q"><span>Can each plant be segmented?</span></div>
+      </div>
+      <div class="challenge-item rv d2">
+        <span class="scale">SCALE 03 — FARMER</span>
+        <h3>Tacit knowledge behind expert decisions</h3>
+        <p>Farm work is not just physical motion; it is an intellectual act grounded in understanding the plant and years of experience.</p>
+        <div class="challenge-q"><span>Which branch is being pruned?</span><span>Why that branch?</span></div>
+      </div>
+    </div>
+    <p class="challenge-note rv">"Which plant in the field, which branch, and with what intention is this person pruning?" — answering this requires virtualizing all three scales and linking them together.</p>
+  </div>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section class="sec research" id="research">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-label"><b>03</b>RESEARCH</div>
+      <div>
+        <h2 class="sec-title">Research themes</h2>
+        <span class="sec-title-ja">Four interlinked projects</span>
+      </div>
+    </div>
+
+    <div class="projects">
+      <article class="project rv">
+        <span class="num">THEME 01</span>
+        <div class="glyph" aria-hidden="true">
+          <svg viewBox="0 0 300 150" fill="none">
+            <g stroke="#0b1a16" stroke-width="1.4" stroke-linecap="round">
+              <path d="M150 145V95M150 95L118 62M150 95L184 58M118 62L96 40M118 62L124 30M184 58L176 26M184 58L214 38M150 110L130 96"/>
+            </g>
+            <g fill="#8fd16a"><circle cx="96" cy="40" r="9"/><circle cx="124" cy="30" r="8"/><circle cx="176" cy="26" r="9"/><circle cx="214" cy="38" r="8"/><circle cx="130" cy="96" r="6"/></g>
+            <g fill="#0b1a16"><circle cx="150" cy="95" r="3"/><circle cx="118" cy="62" r="3"/><circle cx="184" cy="58" r="3"/></g>
+            <path d="M60 145h180" stroke="#0b1a16" stroke-opacity=".2"/>
+          </svg>
+        </div>
+        <h3>PlantTwin</h3>
+        <p class="scale-ja">Plant-level virtualization</p>
+        <p>Reconstructing the 3D structure of individual plants down to each branch, leaf and fruit, and extending it to temporal correspondence and growth prediction. Combining procedural modeling, large language models and physics simulation, we turn reconstructions into "virtual plants" that predict growth, mechanics and the outcome of farm work.</p>
+        <div class="tags"><span>3D reconstruction</span><span>Occlusion</span><span>Growth modeling</span><span>Procedural model</span></div>
+        <p class="lead">Led by <b>Okura group</b> (Osaka University)</p>
+      </article>
+
+      <article class="project rv d1">
+        <span class="num">THEME 02</span>
+        <div class="glyph" aria-hidden="true">
+          <svg viewBox="0 0 300 150" fill="none">
+            <g stroke="#0b1a16" stroke-opacity=".9" stroke-width="1.2"><path d="M150 120L260 80L150 40L40 80Z"/></g>
+            <g stroke="#0b1a16" stroke-opacity=".25"><path d="M67.5 70L177.5 110M95 60L205 100M122.5 50L232.5 90M67.5 90L177.5 50M95 100L205 60M122.5 110L232.5 70"/></g>
+            <path d="M150 100L260 60L150 20L40 60Z" stroke="#4fd6c9" stroke-dasharray="3 3"/>
+            <g fill="#8fd16a"><circle cx="95" cy="80" r="4"/><circle cx="122" cy="70" r="4"/><circle cx="150" cy="80" r="4"/><circle cx="178" cy="90" r="4"/><circle cx="205" cy="80" r="4"/><circle cx="150" cy="60" r="4"/><circle cx="122" cy="90" r="4"/><circle cx="178" cy="70" r="4"/></g>
+            <path d="M210 14l18 6-6 6-18-6z" fill="#0b1a16"/>
+            <path d="M219 26L200 56" stroke="#0b1a16" stroke-dasharray="2 3"/>
+          </svg>
+        </div>
+        <h3>FieldVerse</h3>
+        <p class="scale-ja">Field-level virtualization</p>
+        <p>Integrating RGB, multispectral and LiDAR data from drones, ground robots and environmental sensors to map crop distribution, growth status, environment and their changes into a 4D virtual space — a field-scale digital twin that is updated continuously and responsively.</p>
+        <div class="tags"><span>UAV</span><span>4D mapping</span><span>Phenomics</span><span>Multispectral / LiDAR</span></div>
+        <p class="lead">Led by <b>Guo group</b> (The University of Tokyo)</p>
+      </article>
+
+      <article class="project rv d2">
+        <span class="num">THEME 03</span>
+        <div class="glyph" aria-hidden="true">
+          <svg viewBox="0 0 300 150" fill="none">
+            <path d="M70 75c20-26 50-40 80-40s60 14 80 40c-20 26-50 40-80 40s-60-14-80-40z" stroke="#0b1a16" stroke-width="1.4"/>
+            <circle cx="150" cy="75" r="22" stroke="#0b1a16" stroke-width="1.4"/>
+            <circle cx="150" cy="75" r="9" fill="#0b1a16"/>
+            <path d="M172 75L290 30M172 75L290 120" stroke="#4fd6c9" stroke-dasharray="3 3"/>
+            <circle cx="262" cy="70" r="7" fill="#8fd16a"/>
+            <path d="M255 70h-12M269 70h12M262 63v-12M262 77v12" stroke="#8fd16a"/>
+          </svg>
+        </div>
+        <h3>AgriEgo4D</h3>
+        <p class="scale-ja">Farmer-level virtualization</p>
+        <p>Combining egocentric devices (e.g. Meta Aria), exocentric video and work logs to describe farmers' gaze, motion, movement and decision-making. Building on the large-scale Ego4D initiative, we link expert tacit knowledge to the state of plants and fields.</p>
+        <div class="tags"><span>Egocentric vision</span><span>Action understanding</span><span>Gaze</span><span>VLM</span></div>
+        <p class="lead">Led by <b>Sato &amp; Shinoda group</b> (The University of Tokyo)</p>
+      </article>
+    </div>
+
+    <div class="platform rv">
+      <div>
+        <span class="num">THEME 04 — INTEGRATION</span>
+        <h3>Twin Agriculture<br>Platform</h3>
+        <p class="scale-ja">Connecting the three scales</p>
+      </div>
+      <div>
+        <p>An integrated platform that stores and visualizes data from all three scales, aligned by shared spatio-temporal coordinates and plant IDs. It describes "which farmer did what, to which plant, in which field" in a unified way — the foundation for feeding insight back into the real world.</p>
+        <ul>
+          <li><span class="mono">TESTBED</span>Twin Agriculture testbeds on research and commercial farms</li>
+          <li><span class="mono">DISCOVERY</span>New agronomic and botanical insight via LVLMs</li>
+          <li><span class="mono">WORLD MODEL</span>World models and agents learned from field data</li>
+          <li><span class="mono">FEEDBACK</span>Task suggestions, training, robot simulation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROADMAP ============ -->
+<section class="sec roadmap" id="roadmap">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-label"><b>04</b>ROADMAP</div>
+      <div>
+        <h2 class="sec-title">Roadmap</h2>
+        <span class="sec-title-ja">Plan and milestones</span>
+      </div>
+    </div>
+    <div class="timeline rv" aria-hidden="true">
+      <div class="yr"><b>FY2026</b>Oct 2026 –</div>
+      <div class="yr"><b>FY2027</b></div>
+      <div class="yr"><b>FY2028</b>Midterm</div>
+      <div class="yr"><b>FY2029</b></div>
+      <div class="yr"><b>FY2030</b></div>
+      <div class="yr"><b>FY2031</b>– Mar 2032</div>
+    </div>
+    <div class="phases">
+      <div class="phase p1 rv">
+        <span class="tag">PHASE 1 — FOUNDATION</span>
+        <h4>Establishing three-scale virtualization on a research farm</h4>
+        Using the University of Tokyo's research orchard as a Twin Agriculture testbed, we accumulate plant, field and farmer data over time — virtualizing the entire orchard down to individual branches — and realize the platform's first proof of concept.
+      </div>
+      <div class="phase p2 rv d1">
+        <span class="tag">PHASE 2 — DEPLOYMENT</span>
+        <h4>Scaling to commercial farms and closing the loop</h4>
+        Integrating growth prediction, intent estimation, task suggestion and physical / procedural simulation, we extend to multiple fields and crops, and demonstrate feedback of optimal tasks to farmers and robots.
+      </div>
+    </div>
+    <div class="milestones">
+      <div class="ms rv">
+        <span class="mono">MIDTERM — FY2028</span>
+        <h4>Twin Agriculture PoC on a research farm</h4>
+        <p>3D and temporal reconstruction of field-grown plants, 4D mapping of the research farm, and an egocentric dataset of key farm tasks — presented together as a cross-scale virtualization prototype.</p>
+      </div>
+      <div class="ms rv d1">
+        <span class="mono">FINAL — FY2031</span>
+        <h4>Demonstration on commercial farms</h4>
+        <p>Advanced virtualization robust to diverse farms, testbeds extended to commercial farms, and demonstrated effectiveness in real agricultural work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEMBERS ============ -->
+<section class="sec members" id="members">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-label"><b>05</b>MEMBERS</div>
+      <div>
+        <h2 class="sec-title">Team</h2>
+        <span class="sec-title-ja">Research organization</span>
+      </div>
+    </div>
+    <div class="pis">
+      <div class="pi rv">
+        <div class="avatar"><span class="initial">F.O.</span></div>
+        <span class="role">PRINCIPAL INVESTIGATOR</span>
+        <h3 class="en">Fumio Okura</h3>
+        <span class="en-name">大倉 史生</span>
+        <p class="aff">Associate Professor, SANKEN (Institute of Scientific and Industrial Research), Osaka University</p>
+        <span class="theme">Project lead / PlantTwin / Platform</span>
+      </div>
+      <div class="pi rv d1">
+        <div class="avatar"><span class="initial">W.G.</span></div>
+        <span class="role">CO-PRINCIPAL INVESTIGATOR</span>
+        <h3 class="en">Wei Guo</h3>
+        <span class="en-name">郭 威</span>
+        <p class="aff">Associate Professor, Graduate School of Agricultural and Life Sciences, The University of Tokyo</p>
+        <span class="theme">FieldVerse</span>
+      </div>
+      <div class="pi rv d2">
+        <div class="avatar"><span class="initial">Y.S.</span></div>
+        <span class="role">CO-PRINCIPAL INVESTIGATOR</span>
+        <h3 class="en">Yoichi Sato</h3>
+        <span class="en-name">佐藤 洋一</span>
+        <p class="aff">Professor, Institute of Industrial Science, The University of Tokyo</p>
+        <span class="theme">AgriEgo4D</span>
+      </div>
+    </div>
+
+    <div class="collab rv">
+      <h4>COLLABORATORS</h4>
+      <table>
+        <tr><td>Yuta Nakashima</td><td>Professor, SANKEN, Osaka University</td></tr>
+        <tr><td>Weng Ian Chan</td><td>Specially Appointed Researcher, SANKEN, Osaka University</td></tr>
+        <tr><td>Yosuke Toda</td><td>CEO, Phytometrics Inc.</td></tr>
+        <tr><td>Risa Shinoda</td><td>Assistant Professor, Institute of Industrial Science, The University of Tokyo</td></tr>
+        <tr><td>Takumi Nishiho</td><td>Cooperative Researcher, Institute of Industrial Science, The University of Tokyo</td></tr>
+        <tr><td>Mingfang Zhang</td><td>Cooperative Researcher, Institute of Industrial Science, The University of Tokyo</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWS ============ -->
+<section class="sec news" id="news">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-label"><b>06</b>NEWS</div>
+      <div><h2 class="sec-title">News</h2></div>
+    </div>
+    <ul class="news-list rv">
+      <li><time datetime="2026-10-01">2026.10.01</time><span class="cat">PROJECT</span><span>The JST CREST project "Multi-scale spatio-temporal virtualization of cultivation environments for Twin Agriculture" has started.</span></li>
+      <li><time datetime="2026-10-01">2026.10.01</time><span class="cat">WEB</span><span>Project website launched.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section class="sec pubs" id="publications">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-label"><b>07</b>PUBLICATIONS</div>
+      <div><h2 class="sec-title">Publications</h2></div>
+    </div>
+    <div class="pub-empty rv">Publications will be listed here as they appear.</div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-label"><b>08</b>CONTACT</div>
+      <div></div>
+    </div>
+    <a class="contact-big rv" href="mailto:okura@im.sanken.osaka-u.ac.jp">Get in touch <span class="arrow">→</span></a>
+    <div class="contact-info rv">
+      <div><b>Principal Investigator</b>Fumio Okura<br>SANKEN, Osaka University<br>8-1 Mihogaoka, Ibaraki, Osaka 567-0047, Japan</div>
+      <div><b>Funding</b>This project is supported by JST CREST, under the research area "Technological Innovation and Sustainable Value Co-creation for Digital Spatio-Temporal Expansion" (Research Supervisor: Yoichi Motomura).</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> CREST Twin Agriculture Project</span>
+    <span><a href="https://www.jst.go.jp/kisoken/crest/" target="_blank" rel="noopener">JST CREST</a>　·　<a href="https://www.sanken.osaka-u.ac.jp/" target="_blank" rel="noopener">SANKEN, Osaka University</a></span>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
