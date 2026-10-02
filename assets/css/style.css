@@ -212,10 +212,7 @@ html[lang="en"] .tf-core-title { font-family: var(--f-en); font-size: 13px; lett
 .ch-img::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,26,22,.75), transparent 50%); }
 .ch-img figcaption { position: absolute; z-index: 2; left: 12px; right: 12px; bottom: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
 .ch-img figcaption span { font-size: 11.5px; color: var(--ink); background: var(--accent); padding: 2px 9px; border-radius: 2px; font-weight: 500; }
-.challenge-note .eg { display: inline-block; font-size: .72em; font-family: var(--f-mono); letter-spacing: .16em; color: var(--accent);
-  border: 1px solid rgba(201,242,122,.5); border-radius: 99px; padding: 1px 12px; margin-right: 12px; vertical-align: .2em; }
-html[lang="ja"] .challenge-note .eg { font-family: var(--f-jp); letter-spacing: .1em; }
-
+html[lang="ja"] 
 /* Member photos */
 .pi .avatar img { transition: transform .8s var(--ease); object-position: center 25%; }
 a.avatar { display: grid; text-decoration: none; }
