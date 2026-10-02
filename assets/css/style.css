@@ -312,7 +312,12 @@ html[lang="en"] .project .scale-ja { letter-spacing: .02em; }
 .collab h4 { margin: 0; font-family: var(--f-mono); font-size: 12px; letter-spacing: .14em; font-weight: 400; color: var(--muted); }
 .collab table { width: 100%; border-collapse: collapse; font-size: 15px; }
 .collab td { padding: 14px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
-.collab td:first-child { width: 34%; font-weight: 700; }
+.collab td:first-child { width: 30%; font-weight: 700; }
+.cg-list { display: flex; flex-direction: column; gap: 36px; }
+.cg-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 14px; padding-bottom: 10px; border-bottom: 1px solid var(--ink); }
+.cg-head b { font-size: 16px; font-weight: 700; }
+.cg-head small { font-size: 12.5px; color: var(--muted); }
+.cg-tag { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .12em; color: #fff; background: var(--ink); padding: 2px 9px; border-radius: 2px; }
 .collab td:last-child { color: var(--muted); }
 
 /* News */
