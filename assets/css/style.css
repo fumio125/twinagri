@@ -227,6 +227,12 @@ a.avatar:hover img { transform: scale(1.05); }
   display: grid; place-items: center; font-size: 13px; opacity: 0; transform: translateY(4px); transition: opacity .3s, transform .3s var(--ease); }
 a.avatar:hover .avatar-go, a.avatar:focus-visible .avatar-go { opacity: 1; transform: none; }
 .pi .theme + a.link { margin-left: 12px; }
+.pi-people { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.pi-pair .avatar { width: 100%; max-width: 168px; }
+.pi-pair h3 { font-size: 22px; }
+.pi-pair .role { white-space: nowrap; }
+.pi-pair .aff { font-size: 13px; }
+html[lang="en"] .pi-pair h3 { font-size: 20px; }
 
 /* Challenge (dark) */
 .challenge { background: var(--ink); color: #e9efe9; }
