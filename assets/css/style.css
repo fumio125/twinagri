@@ -56,9 +56,15 @@ a { color: inherit; }
 }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-.brand-mark { width: 30px; height: 30px; }
+.brand-logo { height: 40px; width: auto; display: block; }
+.brand-logo--color { display: none; }
+.site-header.is-scrolled .brand-logo--white { display: none; }
+.site-header.is-scrolled .brand-logo--color { display: block; }
+body.menu-open .site-header .brand-logo--white { display: block; }
+body.menu-open .site-header .brand-logo--color { display: none; }
+.brand-text { padding-left: 12px; border-left: 1px solid currentColor; }
 .brand-text { font-family: var(--f-en); font-weight: 600; font-size: 15px; letter-spacing: .02em; line-height: 1.15; }
-.brand-text small { display: block; font-family: var(--f-mono); font-weight: 400; font-size: 10px; opacity: .65; letter-spacing: .12em; }
+.brand-text small { display: block; opacity: .8 !important; font-family: var(--f-mono); font-weight: 400; font-size: 10px; opacity: .65; letter-spacing: .12em; }
 .nav { display: flex; align-items: center; gap: 26px; }
 .nav a {
   font-family: var(--f-en); font-size: 13px; font-weight: 500; letter-spacing: .06em;
@@ -399,6 +405,8 @@ html[lang="en"] .project .scale-ja { letter-spacing: .02em; }
   .news-list li { grid-template-columns: 1fr; gap: 6px; }
 }
 @media (max-width: 560px) {
+  .brand-logo { height: 26px; }
+  .brand-text { display: none; }
   .wrap { width: calc(100% - 32px); }
   .platform ul { grid-template-columns: 1fr; }
   }
